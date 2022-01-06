@@ -14,6 +14,8 @@ const swagger_1 = require("@nestjs/swagger");
 const class_validator_1 = require("class-validator");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 class CreateVideoDto {
+    vimeoId;
+    fileName;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

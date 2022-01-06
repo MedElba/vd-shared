@@ -14,6 +14,14 @@ const swagger_1 = require("@nestjs/swagger");
 const role_type_1 = require("../common/constants/role-type");
 const abstract_dto_1 = require("../common/abstract.dto");
 class UserDto extends abstract_dto_1.AbstractDto {
+    firstName;
+    lastName;
+    username;
+    role;
+    email;
+    avatar;
+    phone;
+    isActive;
 }
 __decorate([
     (0, swagger_1.ApiPropertyOptional)(),

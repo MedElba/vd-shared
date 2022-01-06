@@ -16,6 +16,21 @@ const contratti_dto_1 = require("../contratti/contratti-dto");
 const puntimappa_dto_1 = require("../puntimappa/puntimappa-dto");
 const video_dto_1 = require("../video/video-dto");
 class InserzioniDto extends abstract_dto_1.AbstractDto {
+    active;
+    name;
+    title;
+    description;
+    images;
+    startDate;
+    endDate;
+    socialFacebook;
+    socialInstagram;
+    socialGoogleplus;
+    socialTwitter;
+    contratto;
+    video;
+    tags;
+    geoPoint;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

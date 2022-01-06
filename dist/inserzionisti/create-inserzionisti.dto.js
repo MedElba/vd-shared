@@ -17,6 +17,27 @@ const title_type_1 = require("../common/constants/title-type");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 const create_puntimappa_dto_1 = require("../puntimappa/create-puntimappa.dto");
 class CreateInserzionistiDto {
+    active;
+    name;
+    title;
+    ragioneSociale;
+    surname;
+    locationPlace;
+    comeRaggiungerci;
+    email;
+    phone;
+    website;
+    socialFacebook;
+    socialLinkedin;
+    socialInstagram;
+    socialGoogleplus;
+    socialTwitter;
+    descriptionShort;
+    descriptionFull;
+    logoImg;
+    locationImg;
+    images;
+    geoPoint;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

@@ -16,6 +16,11 @@ const gruppi_dto_1 = require("../gruppi/gruppi-dto");
 const clienti_dto_1 = require("../clienti/clienti-dto");
 const puntimappa_dto_1 = require("../puntimappa/puntimappa-dto");
 class SchermiDto extends abstract_dto_1.AbstractDto {
+    active;
+    name;
+    gruppo;
+    cliente;
+    geoPoint;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

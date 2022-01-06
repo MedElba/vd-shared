@@ -15,6 +15,11 @@ const class_validator_1 = require("class-validator");
 const role_type_1 = require("../common/constants/role-type");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 class UserUpdateDto {
+    firstName;
+    lastName;
+    email;
+    phone;
+    role;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

@@ -13,6 +13,8 @@ exports.VideoDto = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const abstract_dto_1 = require("../common/abstract.dto");
 class VideoDto extends abstract_dto_1.AbstractDto {
+    vimeoId;
+    fileName;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

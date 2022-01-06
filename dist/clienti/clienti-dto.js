@@ -14,6 +14,8 @@ const swagger_1 = require("@nestjs/swagger");
 const abstract_dto_1 = require("../common/abstract.dto");
 const puntimappa_dto_1 = require("../puntimappa/puntimappa-dto");
 class ClientiDto extends abstract_dto_1.AbstractDto {
+    name;
+    geoPoint;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

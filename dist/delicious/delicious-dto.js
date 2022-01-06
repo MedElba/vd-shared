@@ -13,6 +13,44 @@ exports.DeliciousDto = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const abstract_dto_1 = require("../common/abstract.dto");
 class DeliciousDto extends abstract_dto_1.AbstractDto {
+    approved;
+    name;
+    user_id;
+    client_id;
+    logo;
+    bannerHeroTitle;
+    bannerHeroSubtitle;
+    bannerOptionalText;
+    bannerImgUrl;
+    aboutHeroTitle;
+    aboutHeroSubtitle;
+    aboutTitle;
+    aboutDescription;
+    aboutImgUrl;
+    eventHeroTitle;
+    eventHeroSubtitle;
+    eventHeroImgUrl;
+    eventImgUrl;
+    eventName;
+    eventDescription;
+    eventPlace;
+    eventTime;
+    menuHeroTitle;
+    menuHeroSubtitle;
+    contactHeroTitle;
+    contactHeroSubtitle;
+    contactPhone;
+    contactOpenDays;
+    contactClosedDays;
+    footerHetoTitle;
+    footerHeroAddress;
+    footerLastSentence;
+    aboutPOI;
+    menuPlates;
+    footerSocials;
+    clAboutPOI;
+    clMenuPlates;
+    clFooterSocials;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

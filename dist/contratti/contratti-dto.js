@@ -14,6 +14,12 @@ const swagger_1 = require("@nestjs/swagger");
 const abstract_dto_1 = require("../common/abstract.dto");
 const inserzionisti_dto_1 = require("../inserzionisti/inserzionisti-dto");
 class ContrattiDto extends abstract_dto_1.AbstractDto {
+    active;
+    date;
+    onlineStartDate;
+    onlineEndDate;
+    inserzionista;
+    price;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

@@ -14,6 +14,15 @@ const swagger_1 = require("@nestjs/swagger");
 const abstract_dto_1 = require("../common/abstract.dto");
 const user_dto_1 = require("../user/user-dto");
 class BlogsDto extends abstract_dto_1.AbstractDto {
+    title;
+    metaDesc;
+    imgHeader;
+    imgGallery;
+    content;
+    url;
+    showComm;
+    publish;
+    user;
 }
 __decorate([
     (0, swagger_1.ApiPropertyOptional)(),

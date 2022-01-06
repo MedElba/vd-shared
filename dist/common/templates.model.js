@@ -19,6 +19,11 @@ var FoodType;
     FoodType[FoodType["Dinner"] = 3] = "Dinner";
 })(FoodType = exports.FoodType || (exports.FoodType = {}));
 class IFood {
+    id;
+    name;
+    description;
+    price;
+    type;
 }
 __decorate([
     (0, class_validator_1.IsString)(),
@@ -42,6 +47,8 @@ __decorate([
 ], IFood.prototype, "type", void 0);
 exports.IFood = IFood;
 class ISocialIcon {
+    iconUrl;
+    socialUrl;
 }
 __decorate([
     (0, class_validator_1.IsString)(),

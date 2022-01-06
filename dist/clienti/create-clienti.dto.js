@@ -16,6 +16,8 @@ const class_validator_1 = require("class-validator");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 const create_puntimappa_dto_1 = require("../puntimappa/create-puntimappa.dto");
 class CreateClientiDto {
+    name;
+    geoPoint;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

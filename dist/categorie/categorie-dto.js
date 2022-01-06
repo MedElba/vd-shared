@@ -13,6 +13,11 @@ exports.CategorieDto = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const abstract_dto_1 = require("../common/abstract.dto");
 class CategorieDto extends abstract_dto_1.AbstractDto {
+    name;
+    parent;
+    icon;
+    image;
+    fullname;
 }
 __decorate([
     (0, swagger_1.ApiPropertyOptional)(),

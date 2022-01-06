@@ -13,6 +13,17 @@ exports.PuntiMappaDto = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const abstract_dto_1 = require("../common/abstract.dto");
 class PuntiMappaDto extends abstract_dto_1.AbstractDto {
+    lat;
+    lng;
+    label;
+    countryCode;
+    region;
+    province;
+    city;
+    zip;
+    street;
+    addNum;
+    json;
 }
 __decorate([
     (0, swagger_1.ApiPropertyOptional)(),

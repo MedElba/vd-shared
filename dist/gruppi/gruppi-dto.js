@@ -13,6 +13,8 @@ exports.GruppiDto = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const abstract_dto_1 = require("../common/abstract.dto");
 class GruppiDto extends abstract_dto_1.AbstractDto {
+    active;
+    name;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

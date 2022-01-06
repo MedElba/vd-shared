@@ -16,6 +16,20 @@ const class_validator_1 = require("class-validator");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 const create_puntimappa_dto_1 = require("../puntimappa/create-puntimappa.dto");
 class CreateInserzioniDto {
+    active;
+    name;
+    title;
+    description;
+    images;
+    startDate;
+    endDate;
+    socialFacebook;
+    socialInstagram;
+    socialGoogleplus;
+    socialTwitter;
+    contratto_id;
+    video_id;
+    geoPoint;
 }
 __decorate([
     (0, swagger_1.ApiProperty)(),

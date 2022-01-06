@@ -15,6 +15,27 @@ const title_type_1 = require("../common/constants/title-type");
 const abstract_dto_1 = require("../common/abstract.dto");
 const puntimappa_dto_1 = require("../puntimappa/puntimappa-dto");
 class InserzionistiDto extends abstract_dto_1.AbstractDto {
+    active;
+    name;
+    title;
+    ragioneSociale;
+    surname;
+    locationPlace;
+    comeRaggiungerci;
+    email;
+    phone;
+    website;
+    socialFacebook;
+    socialLinkedin;
+    socialInstagram;
+    socialGoogleplus;
+    socialTwitter;
+    descriptionShort;
+    descriptionFull;
+    logoImg;
+    locationImg;
+    images;
+    geoPoint;
 }
 __decorate([
     (0, swagger_1.ApiPropertyOptional)(),

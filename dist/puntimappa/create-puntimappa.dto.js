@@ -14,6 +14,17 @@ const swagger_1 = require("@nestjs/swagger");
 const class_validator_1 = require("class-validator");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 class CreatePuntiMappaDto {
+    lat;
+    lng;
+    label;
+    countryCode;
+    region;
+    province;
+    city;
+    zip;
+    street;
+    addNum;
+    json;
 }
 __decorate([
     (0, swagger_1.ApiPropertyOptional)(),

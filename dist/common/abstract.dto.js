@@ -13,6 +13,9 @@ exports.AbstractDto = void 0;
 const swagger_1 = require("@nestjs/swagger");
 const class_transformer_1 = require("class-transformer");
 class AbstractDto {
+    id;
+    createdAt;
+    updatedAt;
     constructor(entity) {
         this.id = entity.id;
         this.createdAt = entity.createdAt;
