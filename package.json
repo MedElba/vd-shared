@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/MedElba/vd-shared.git"
   },
+  "type": "module",
   "dependencies": {
     "@nestjs/common": "^8.2.3",
     "@nestjs/core": "^8.2.3",
