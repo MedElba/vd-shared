@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,12 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreateOfferteDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const class_validator_1 = require("class-validator");
-const transforms_decorator_1 = require("../decorators/transforms.decorator");
-class CreateOfferteDto {
+import { ApiProperty } from '@nestjs/swagger';
+import { IsDateString, IsNotEmpty, IsString } from 'class-validator';
+import { Trim } from '../decorators/transforms.decorator';
+export class CreateOfferteDto {
     active;
     name;
     images;
@@ -23,44 +20,43 @@ class CreateOfferteDto {
     inserzione_id;
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Boolean)
 ], CreateOfferteDto.prototype, "active", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiProperty(),
+    IsNotEmpty(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreateOfferteDto.prototype, "name", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiProperty(),
+    IsNotEmpty(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreateOfferteDto.prototype, "images", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiProperty(),
+    IsNotEmpty(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreateOfferteDto.prototype, "description", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsDateString)(),
+    ApiProperty(),
+    IsDateString(),
     __metadata("design:type", Date)
 ], CreateOfferteDto.prototype, "startDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsDateString)(),
+    ApiProperty(),
+    IsDateString(),
     __metadata("design:type", Date)
 ], CreateOfferteDto.prototype, "endDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsString)(),
+    ApiProperty(),
+    IsString(),
     __metadata("design:type", String)
 ], CreateOfferteDto.prototype, "inserzione_id", void 0);
-exports.CreateOfferteDto = CreateOfferteDto;
 //# sourceMappingURL=create-offerte.dto.js.map

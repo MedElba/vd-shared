@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,13 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.InserzionistiDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const title_type_1 = require("../common/constants/title-type");
-const abstract_dto_1 = require("../common/abstract.dto");
-const puntimappa_dto_1 = require("../puntimappa/puntimappa-dto");
-class InserzionistiDto extends abstract_dto_1.AbstractDto {
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { TitleType } from '../common/constants/title-type';
+import { AbstractDto } from '../common/abstract.dto';
+import { PuntiMappaDto } from '../puntimappa/puntimappa-dto';
+export class InserzionistiDto extends AbstractDto {
     active;
     name;
     title;
@@ -38,88 +35,87 @@ class InserzionistiDto extends abstract_dto_1.AbstractDto {
     geoPoint;
 }
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", Boolean)
 ], InserzionistiDto.prototype, "active", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "name", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)({ enum: title_type_1.TitleType }),
+    ApiPropertyOptional({ enum: TitleType }),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "title", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "ragioneSociale", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "surname", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "locationPlace", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "comeRaggiungerci", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "email", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "phone", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "website", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "socialFacebook", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "socialLinkedin", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "socialInstagram", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "socialGoogleplus", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "socialTwitter", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "descriptionShort", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "descriptionFull", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "logoImg", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "locationImg", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzionistiDto.prototype, "images", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    __metadata("design:type", puntimappa_dto_1.PuntiMappaDto)
+    ApiPropertyOptional(),
+    __metadata("design:type", PuntiMappaDto)
 ], InserzionistiDto.prototype, "geoPoint", void 0);
-exports.InserzionistiDto = InserzionistiDto;
 //# sourceMappingURL=inserzionisti-dto.js.map

@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,13 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserUpdateDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const class_validator_1 = require("class-validator");
-const role_type_1 = require("../common/constants/role-type");
-const transforms_decorator_1 = require("../decorators/transforms.decorator");
-class UserUpdateDto {
+import { ApiProperty } from '@nestjs/swagger';
+import { IsEmail, IsEnum, IsNotEmpty, IsOptional, IsPhoneNumber, IsString, } from 'class-validator';
+import { RoleType } from '../common/constants/role-type';
+import { Trim } from '../decorators/transforms.decorator';
+export class UserUpdateDto {
     firstName;
     lastName;
     email;
@@ -22,37 +19,36 @@ class UserUpdateDto {
     role;
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiProperty(),
+    IsString(),
+    IsNotEmpty(),
+    Trim(),
     __metadata("design:type", String)
 ], UserUpdateDto.prototype, "firstName", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiProperty(),
+    IsString(),
+    IsNotEmpty(),
+    Trim(),
     __metadata("design:type", String)
 ], UserUpdateDto.prototype, "lastName", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsEmail)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiProperty(),
+    IsString(),
+    IsEmail(),
+    IsNotEmpty(),
+    Trim(),
     __metadata("design:type", String)
 ], UserUpdateDto.prototype, "email", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    (0, class_validator_1.IsPhoneNumber)(),
-    (0, class_validator_1.IsOptional)(),
+    ApiProperty(),
+    IsPhoneNumber(),
+    IsOptional(),
     __metadata("design:type", String)
 ], UserUpdateDto.prototype, "phone", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)({ enum: role_type_1.RoleType }),
-    (0, class_validator_1.IsEnum)(role_type_1.RoleType),
+    ApiProperty({ enum: RoleType }),
+    IsEnum(RoleType),
     __metadata("design:type", String)
 ], UserUpdateDto.prototype, "role", void 0);
-exports.UserUpdateDto = UserUpdateDto;
 //# sourceMappingURL=UserUpdateDto.js.map

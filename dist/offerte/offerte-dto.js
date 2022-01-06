@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,12 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.OfferteDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const abstract_dto_1 = require("../common/abstract.dto");
-const inserzioni_dto_1 = require("../inserzioni/inserzioni-dto");
-class OfferteDto extends abstract_dto_1.AbstractDto {
+import { ApiProperty } from '@nestjs/swagger';
+import { AbstractDto } from '../common/abstract.dto';
+import { InserzioniDto } from '../inserzioni/inserzioni-dto';
+export class OfferteDto extends AbstractDto {
     active;
     name;
     images;
@@ -23,32 +20,31 @@ class OfferteDto extends abstract_dto_1.AbstractDto {
     inserzione;
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Boolean)
 ], OfferteDto.prototype, "active", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], OfferteDto.prototype, "name", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], OfferteDto.prototype, "images", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], OfferteDto.prototype, "description", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Date)
 ], OfferteDto.prototype, "startDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Date)
 ], OfferteDto.prototype, "endDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    __metadata("design:type", inserzioni_dto_1.InserzioniDto)
+    ApiProperty(),
+    __metadata("design:type", InserzioniDto)
 ], OfferteDto.prototype, "inserzione", void 0);
-exports.OfferteDto = OfferteDto;
 //# sourceMappingURL=offerte-dto.js.map

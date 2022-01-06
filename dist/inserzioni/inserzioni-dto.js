@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,14 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.InserzioniDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const abstract_dto_1 = require("../common/abstract.dto");
-const contratti_dto_1 = require("../contratti/contratti-dto");
-const puntimappa_dto_1 = require("../puntimappa/puntimappa-dto");
-const video_dto_1 = require("../video/video-dto");
-class InserzioniDto extends abstract_dto_1.AbstractDto {
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { AbstractDto } from '../common/abstract.dto';
+import { ContrattiDto } from '../contratti/contratti-dto';
+import { PuntiMappaDto } from '../puntimappa/puntimappa-dto';
+import { VideoDto } from '../video/video-dto';
+export class InserzioniDto extends AbstractDto {
     active;
     name;
     title;
@@ -33,64 +30,63 @@ class InserzioniDto extends abstract_dto_1.AbstractDto {
     geoPoint;
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Boolean)
 ], InserzioniDto.prototype, "active", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], InserzioniDto.prototype, "name", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], InserzioniDto.prototype, "title", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzioniDto.prototype, "description", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzioniDto.prototype, "images", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Date)
 ], InserzioniDto.prototype, "startDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Date)
 ], InserzioniDto.prototype, "endDate", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzioniDto.prototype, "socialFacebook", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzioniDto.prototype, "socialInstagram", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzioniDto.prototype, "socialGoogleplus", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], InserzioniDto.prototype, "socialTwitter", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    __metadata("design:type", contratti_dto_1.ContrattiDto)
+    ApiProperty(),
+    __metadata("design:type", ContrattiDto)
 ], InserzioniDto.prototype, "contratto", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    __metadata("design:type", video_dto_1.VideoDto)
+    ApiProperty(),
+    __metadata("design:type", VideoDto)
 ], InserzioniDto.prototype, "video", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Array)
 ], InserzioniDto.prototype, "tags", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    __metadata("design:type", puntimappa_dto_1.PuntiMappaDto)
+    ApiPropertyOptional(),
+    __metadata("design:type", PuntiMappaDto)
 ], InserzioniDto.prototype, "geoPoint", void 0);
-exports.InserzioniDto = InserzioniDto;
 //# sourceMappingURL=inserzioni-dto.js.map

@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.RoleType = void 0;
-var RoleType;
+export var RoleType;
 (function (RoleType) {
     RoleType["USER"] = "USER";
     RoleType["ADMIN"] = "ADMIN";
@@ -9,5 +6,5 @@ var RoleType;
     RoleType["SUPER_ADMIN"] = "SUPER_ADMIN";
     RoleType["SELLER"] = "SELLER";
     RoleType["DATA_ENTRY"] = "DATA_ENTRY";
-})(RoleType = exports.RoleType || (exports.RoleType = {}));
+})(RoleType || (RoleType = {}));
 //# sourceMappingURL=role-type.js.map

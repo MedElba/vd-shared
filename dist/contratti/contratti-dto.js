@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,12 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ContrattiDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const abstract_dto_1 = require("../common/abstract.dto");
-const inserzionisti_dto_1 = require("../inserzionisti/inserzionisti-dto");
-class ContrattiDto extends abstract_dto_1.AbstractDto {
+import { ApiProperty } from '@nestjs/swagger';
+import { AbstractDto } from '../common/abstract.dto';
+import { InserzionistiDto } from '../inserzionisti/inserzionisti-dto';
+export class ContrattiDto extends AbstractDto {
     active;
     date;
     onlineStartDate;
@@ -22,28 +19,27 @@ class ContrattiDto extends abstract_dto_1.AbstractDto {
     price;
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Boolean)
 ], ContrattiDto.prototype, "active", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Date)
 ], ContrattiDto.prototype, "date", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Date)
 ], ContrattiDto.prototype, "onlineStartDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Date)
 ], ContrattiDto.prototype, "onlineEndDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    __metadata("design:type", inserzionisti_dto_1.InserzionistiDto)
+    ApiProperty(),
+    __metadata("design:type", InserzionistiDto)
 ], ContrattiDto.prototype, "inserzionista", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Number)
 ], ContrattiDto.prototype, "price", void 0);
-exports.ContrattiDto = ContrattiDto;
 //# sourceMappingURL=contratti-dto.js.map

@@ -1,1 +1,1 @@
-{"version":3,"file":"update-puntimappa.dto.js","sourceRoot":"","sources":["../../src/puntimappa/update-puntimappa.dto.ts"],"names":[],"mappings":";;;AAAA,6CAA8C;AAE9C,mEAA8D;AAE9D,MAAa,mBAAoB,SAAQ,IAAA,qBAAW,EAAC,2CAAmB,CAAC;CAAG;AAA5E,kDAA4E"}
+{"version":3,"file":"update-puntimappa.dto.js","sourceRoot":"","sources":["../../src/puntimappa/update-puntimappa.dto.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,iBAAiB,CAAC;AAE9C,OAAO,EAAE,mBAAmB,EAAE,MAAM,yBAAyB,CAAC;AAE9D,MAAM,OAAO,mBAAoB,SAAQ,WAAW,CAAC,mBAAmB,CAAC;CAAG"}

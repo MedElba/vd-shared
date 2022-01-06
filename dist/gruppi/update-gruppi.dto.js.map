@@ -1,1 +1,1 @@
-{"version":3,"file":"update-gruppi.dto.js","sourceRoot":"","sources":["../../src/gruppi/update-gruppi.dto.ts"],"names":[],"mappings":";;;AAAA,6CAA8C;AAC9C,2DAAsD;AAEtD,MAAa,eAAgB,SAAQ,IAAA,qBAAW,EAAC,mCAAe,CAAC;CAAG;AAApE,0CAAoE"}
+{"version":3,"file":"update-gruppi.dto.js","sourceRoot":"","sources":["../../src/gruppi/update-gruppi.dto.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,iBAAiB,CAAC;AAC9C,OAAO,EAAE,eAAe,EAAE,MAAM,qBAAqB,CAAC;AAEtD,MAAM,OAAO,eAAgB,SAAQ,WAAW,CAAC,eAAe,CAAC;CAAG"}

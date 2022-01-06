@@ -1,1 +1,1 @@
-{"version":3,"file":"update-delicious.dto.js","sourceRoot":"","sources":["../../src/delicious/update-delicious.dto.ts"],"names":[],"mappings":";;;AAAA,6CAA8C;AAC9C,iEAA4D;AAE5D,MAAa,kBAAmB,SAAQ,IAAA,qBAAW,EAAC,yCAAkB,CAAC;CAAG;AAA1E,gDAA0E"}
+{"version":3,"file":"update-delicious.dto.js","sourceRoot":"","sources":["../../src/delicious/update-delicious.dto.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,iBAAiB,CAAC;AAC9C,OAAO,EAAE,kBAAkB,EAAE,MAAM,wBAAwB,CAAC;AAE5D,MAAM,OAAO,kBAAmB,SAAQ,WAAW,CAAC,kBAAkB,CAAC;CAAG"}

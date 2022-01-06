@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,12 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const role_type_1 = require("../common/constants/role-type");
-const abstract_dto_1 = require("../common/abstract.dto");
-class UserDto extends abstract_dto_1.AbstractDto {
+import { ApiPropertyOptional } from '@nestjs/swagger';
+import { RoleType } from '../common/constants/role-type';
+import { AbstractDto } from '../common/abstract.dto';
+export class UserDto extends AbstractDto {
     firstName;
     lastName;
     username;
@@ -24,36 +21,35 @@ class UserDto extends abstract_dto_1.AbstractDto {
     isActive;
 }
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], UserDto.prototype, "firstName", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], UserDto.prototype, "lastName", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], UserDto.prototype, "username", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)({ enum: role_type_1.RoleType }),
+    ApiPropertyOptional({ enum: RoleType }),
     __metadata("design:type", String)
 ], UserDto.prototype, "role", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], UserDto.prototype, "email", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], UserDto.prototype, "avatar", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", String)
 ], UserDto.prototype, "phone", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
+    ApiPropertyOptional(),
     __metadata("design:type", Boolean)
 ], UserDto.prototype, "isActive", void 0);
-exports.UserDto = UserDto;
 //# sourceMappingURL=user-dto.js.map

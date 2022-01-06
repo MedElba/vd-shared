@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,14 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.SchermiDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const abstract_dto_1 = require("../common/abstract.dto");
-const gruppi_dto_1 = require("../gruppi/gruppi-dto");
-const clienti_dto_1 = require("../clienti/clienti-dto");
-const puntimappa_dto_1 = require("../puntimappa/puntimappa-dto");
-class SchermiDto extends abstract_dto_1.AbstractDto {
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { AbstractDto } from '../common/abstract.dto';
+import { GruppiDto } from '../gruppi/gruppi-dto';
+import { ClientiDto } from '../clienti/clienti-dto';
+import { PuntiMappaDto } from '../puntimappa/puntimappa-dto';
+export class SchermiDto extends AbstractDto {
     active;
     name;
     gruppo;
@@ -23,24 +20,23 @@ class SchermiDto extends abstract_dto_1.AbstractDto {
     geoPoint;
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", Boolean)
 ], SchermiDto.prototype, "active", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
+    ApiProperty(),
     __metadata("design:type", String)
 ], SchermiDto.prototype, "name", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    __metadata("design:type", gruppi_dto_1.GruppiDto)
+    ApiProperty(),
+    __metadata("design:type", GruppiDto)
 ], SchermiDto.prototype, "gruppo", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    __metadata("design:type", clienti_dto_1.ClientiDto)
+    ApiProperty(),
+    __metadata("design:type", ClientiDto)
 ], SchermiDto.prototype, "cliente", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    __metadata("design:type", puntimappa_dto_1.PuntiMappaDto)
+    ApiPropertyOptional(),
+    __metadata("design:type", PuntiMappaDto)
 ], SchermiDto.prototype, "geoPoint", void 0);
-exports.SchermiDto = SchermiDto;
 //# sourceMappingURL=schermi-dto.js.map

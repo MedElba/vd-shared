@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,12 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreatePuntiMappaDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
-const class_validator_1 = require("class-validator");
-const transforms_decorator_1 = require("../decorators/transforms.decorator");
-class CreatePuntiMappaDto {
+import { ApiPropertyOptional } from '@nestjs/swagger';
+import { IsOptional, IsString } from 'class-validator';
+import { Trim } from '../decorators/transforms.decorator';
+export class CreatePuntiMappaDto {
     lat;
     lng;
     label;
@@ -27,77 +24,76 @@ class CreatePuntiMappaDto {
     json;
 }
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
+    ApiPropertyOptional(),
+    IsOptional(),
     __metadata("design:type", Number)
 ], CreatePuntiMappaDto.prototype, "lat", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
+    ApiPropertyOptional(),
+    IsOptional(),
     __metadata("design:type", Number)
 ], CreatePuntiMappaDto.prototype, "lng", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "label", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "countryCode", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "region", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "province", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "city", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "zip", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "street", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "addNum", void 0);
 __decorate([
-    (0, swagger_1.ApiPropertyOptional)(),
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    (0, transforms_decorator_1.Trim)(),
+    ApiPropertyOptional(),
+    IsOptional(),
+    IsString(),
+    Trim(),
     __metadata("design:type", String)
 ], CreatePuntiMappaDto.prototype, "json", void 0);
-exports.CreatePuntiMappaDto = CreatePuntiMappaDto;
 //# sourceMappingURL=create-puntimappa.dto.js.map
