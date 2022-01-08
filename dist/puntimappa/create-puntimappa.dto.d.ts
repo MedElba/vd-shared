@@ -1,0 +1,13 @@
+export declare class CreatePuntiMappaDto {
+    lat: number;
+    lng: number;
+    label: string;
+    countryCode: string;
+    region: string;
+    province: string;
+    city: string;
+    zip: string;
+    street: string;
+    addNum: string;
+    json?: string;
+}
