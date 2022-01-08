@@ -10,10 +10,10 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./src/blogs/blogs-dto"), exports);
-__exportStar(require("./src/blogs/create-blogs.dto"), exports);
-__exportStar(require("./src/blogs/update-blogs.dto"), exports);
-__exportStar(require("./src/user/user-dto"), exports);
-__exportStar(require("./src/user/UserCreateDto"), exports);
-__exportStar(require("./src/user/UserUpdateDto"), exports);
+__exportStar(require("./blogs/blogs-dto"), exports);
+__exportStar(require("./blogs/create-blogs.dto"), exports);
+__exportStar(require("./blogs/update-blogs.dto"), exports);
+__exportStar(require("./user/user-dto"), exports);
+__exportStar(require("./user/UserCreateDto"), exports);
+__exportStar(require("./user/UserUpdateDto"), exports);
 //# sourceMappingURL=index.js.map
