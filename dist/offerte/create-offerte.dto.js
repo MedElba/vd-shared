@@ -10,48 +10,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreateOfferteDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
 const class_validator_1 = require("class-validator");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 class CreateOfferteDto {
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    __metadata("design:type", Boolean)
-], CreateOfferteDto.prototype, "active", void 0);
-__decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsString)(),
     (0, transforms_decorator_1.Trim)(),
     __metadata("design:type", String)
 ], CreateOfferteDto.prototype, "name", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsString)(),
     (0, transforms_decorator_1.Trim)(),
     __metadata("design:type", String)
 ], CreateOfferteDto.prototype, "images", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsString)(),
     (0, transforms_decorator_1.Trim)(),
     __metadata("design:type", String)
 ], CreateOfferteDto.prototype, "description", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsDateString)(),
     __metadata("design:type", Date)
 ], CreateOfferteDto.prototype, "startDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsDateString)(),
     __metadata("design:type", Date)
 ], CreateOfferteDto.prototype, "endDate", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], CreateOfferteDto.prototype, "inserzione_id", void 0);

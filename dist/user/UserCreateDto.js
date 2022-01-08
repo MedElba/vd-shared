@@ -10,28 +10,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserCreateDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
 const class_validator_1 = require("class-validator");
 const role_type_1 = require("../common/constants/role-type");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 class UserCreateDto {
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     (0, transforms_decorator_1.Trim)(),
     __metadata("design:type", String)
 ], UserCreateDto.prototype, "firstName", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     (0, transforms_decorator_1.Trim)(),
     __metadata("design:type", String)
 ], UserCreateDto.prototype, "lastName", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsEmail)(),
     (0, class_validator_1.IsNotEmpty)(),
@@ -39,19 +35,16 @@ __decorate([
     __metadata("design:type", String)
 ], UserCreateDto.prototype, "email", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)({ minLength: 6 }),
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.MinLength)(6),
     __metadata("design:type", String)
 ], UserCreateDto.prototype, "password", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsPhoneNumber)(),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
 ], UserCreateDto.prototype, "phone", void 0);
 __decorate([
-    (0, swagger_1.ApiProperty)({ enum: role_type_1.RoleType }),
     (0, class_validator_1.IsEnum)(role_type_1.RoleType),
     __metadata("design:type", String)
 ], UserCreateDto.prototype, "role", void 0);

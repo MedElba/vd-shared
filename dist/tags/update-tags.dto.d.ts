@@ -1,5 +1,3 @@
-import { CreateTagsDto } from './create-tags.dto';
-declare const UpdateTagsDto_base: import("@nestjs/common").Type<Partial<CreateTagsDto>>;
-export declare class UpdateTagsDto extends UpdateTagsDto_base {
+import { CreateTagsDto } from "./create-tags.dto";
+export declare class UpdateTagsDto extends CreateTagsDto {
 }
-export {};

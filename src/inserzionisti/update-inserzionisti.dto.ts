@@ -1,7 +1,3 @@
-import { PartialType } from '@nestjs/swagger';
+import { CreateInserzionistiDto } from "./create-inserzionisti.dto";
 
-import { CreateInserzionistiDto } from './create-inserzionisti.dto';
-
-export class UpdateInserzionistiDto extends PartialType(
-  CreateInserzionistiDto,
-) {}
+export class UpdateInserzionistiDto extends CreateInserzionistiDto {}

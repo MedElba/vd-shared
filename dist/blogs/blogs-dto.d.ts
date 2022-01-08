@@ -1,5 +1,5 @@
-import { AbstractDto } from '../common/abstract.dto';
-import { UserDto } from '../user/user-dto';
+import { AbstractDto } from "../common/abstract.dto";
+import { UserDto } from "../user/user-dto";
 export declare class BlogsDto extends AbstractDto {
     title?: string;
     metaDesc?: string;

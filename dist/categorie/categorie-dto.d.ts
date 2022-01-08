@@ -1,4 +1,4 @@
-import { AbstractDto } from '../common/abstract.dto';
+import { AbstractDto } from "../common/abstract.dto";
 export declare class CategorieDto extends AbstractDto {
     name: string;
     parent?: string;

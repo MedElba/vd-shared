@@ -10,17 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreateGruppiDto = void 0;
-const swagger_1 = require("@nestjs/swagger");
 const class_validator_1 = require("class-validator");
 const transforms_decorator_1 = require("../decorators/transforms.decorator");
 class CreateGruppiDto {
 }
 __decorate([
-    (0, swagger_1.ApiProperty)(),
-    __metadata("design:type", Boolean)
-], CreateGruppiDto.prototype, "active", void 0);
-__decorate([
-    (0, swagger_1.ApiProperty)(),
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsString)(),
     (0, transforms_decorator_1.Trim)(),

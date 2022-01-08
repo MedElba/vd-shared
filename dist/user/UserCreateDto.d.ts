@@ -1,4 +1,4 @@
-import { RoleType } from '../common/constants/role-type';
+import { RoleType } from "../common/constants/role-type";
 export declare class UserCreateDto {
     readonly firstName: string;
     readonly lastName: string;

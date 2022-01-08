@@ -1,8 +1,8 @@
-import { AbstractDto } from '../common/abstract.dto';
-import { ContrattiDto } from '../contratti/contratti-dto';
-import { PuntiMappaDto } from '../puntimappa/puntimappa-dto';
-import type { TagsDto } from '../tags/tags-dto';
-import { VideoDto } from '../video/video-dto';
+import { AbstractDto } from "../common/abstract.dto";
+import { ContrattiDto } from "../contratti/contratti-dto";
+import { PuntiMappaDto } from "../puntimappa/puntimappa-dto";
+import type { TagsDto } from "../tags/tags-dto";
+import { VideoDto } from "../video/video-dto";
 export declare class InserzioniDto extends AbstractDto {
     active: boolean;
     name: string;

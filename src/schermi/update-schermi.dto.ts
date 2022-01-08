@@ -1,4 +1,3 @@
-import { PartialType } from '@nestjs/swagger';
-import { CreateSchermiDto } from './create-schermi.dto';
+import { CreateSchermiDto } from "./create-schermi.dto";
 
-export class UpdateSchermiDto extends PartialType(CreateSchermiDto) {}
+export class UpdateSchermiDto extends CreateSchermiDto {}

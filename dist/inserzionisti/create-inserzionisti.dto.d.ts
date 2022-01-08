@@ -1,5 +1,5 @@
-import { TitleType } from '../common/constants/title-type';
-import { CreatePuntiMappaDto } from '../puntimappa/create-puntimappa.dto';
+import { TitleType } from "../common/constants/title-type";
+import { CreatePuntiMappaDto } from "../puntimappa/create-puntimappa.dto";
 export declare class CreateInserzionistiDto {
     active: boolean;
     name: string;

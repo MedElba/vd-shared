@@ -1,1 +1,1 @@
-{"version":3,"file":"gruppi-dto.js","sourceRoot":"","sources":["../../src/gruppi/gruppi-dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,6CAA8C;AAE9C,yDAAqD;AAErD,MAAa,SAAU,SAAQ,0BAAW;CAMzC;AAJC;IADC,IAAA,qBAAW,GAAE;;yCACE;AAGhB;IADC,IAAA,qBAAW,GAAE;;uCACD;AALf,8BAMC"}
+{"version":3,"file":"gruppi-dto.js","sourceRoot":"","sources":["../../src/gruppi/gruppi-dto.ts"],"names":[],"mappings":";;;AAAA,yDAAqD;AAErD,MAAa,SAAU,SAAQ,0BAAW;CAIzC;AAJD,8BAIC"}

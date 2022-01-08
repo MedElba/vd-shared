@@ -1,4 +1,4 @@
-import { CreatePuntiMappaDto } from '../puntimappa/create-puntimappa.dto';
+import { CreatePuntiMappaDto } from "../puntimappa/create-puntimappa.dto";
 export declare class CreateInserzioniDto {
     active: boolean;
     name: string;

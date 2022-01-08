@@ -1,4 +1,4 @@
-import { IFood, ISocialIcon } from '../common/templates.model';
+import { IFood, ISocialIcon } from "../common/templates.model";
 export declare class CreateDeliciousDto {
     approved: boolean;
     name: string;

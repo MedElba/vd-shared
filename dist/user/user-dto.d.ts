@@ -1,5 +1,5 @@
-import { RoleType } from '../common/constants/role-type';
-import { AbstractDto } from '../common/abstract.dto';
+import { RoleType } from "../common/constants/role-type";
+import { AbstractDto } from "../common/abstract.dto";
 export declare class UserDto extends AbstractDto {
     firstName: string;
     lastName: string;

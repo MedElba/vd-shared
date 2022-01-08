@@ -7,9 +7,9 @@ function Trim() {
     return (0, class_transformer_1.Transform)((params) => {
         const value = params.value;
         if (Array.isArray(value)) {
-            return value.map((v) => (0, lodash_1.trim)(v).replace(/\s\s+/g, ' '));
+            return value.map((v) => (0, lodash_1.trim)(v).replace(/\s\s+/g, " "));
         }
-        return (0, lodash_1.trim)(value).replace(/\s\s+/g, ' ');
+        return (0, lodash_1.trim)(value).replace(/\s\s+/g, " ");
     });
 }
 exports.Trim = Trim;

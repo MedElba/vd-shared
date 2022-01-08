@@ -1,5 +1,3 @@
-import { CreateBlogsDto } from './create-blogs.dto';
-declare const UpdateBlogsDto_base: import("@nestjs/common").Type<Partial<CreateBlogsDto>>;
-export declare class UpdateBlogsDto extends UpdateBlogsDto_base {
+import { CreateBlogsDto } from "./create-blogs.dto";
+export declare class UpdateBlogsDto extends CreateBlogsDto {
 }
-export {};

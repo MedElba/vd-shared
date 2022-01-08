@@ -1,5 +1,5 @@
-import { AbstractDto } from '../common/abstract.dto';
-import type { IFood, ISocialIcon } from '../common/templates.model';
+import { AbstractDto } from "../common/abstract.dto";
+import type { IFood, ISocialIcon } from "../common/templates.model";
 export declare class DeliciousDto extends AbstractDto {
     approved: boolean;
     name: string;

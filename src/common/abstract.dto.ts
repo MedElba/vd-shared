@@ -1,4 +1,3 @@
-import { ApiProperty } from '@nestjs/swagger';
 import { Type } from "class-transformer";
 
 export interface IAbstractEntity {
@@ -10,14 +9,11 @@ export interface IAbstractEntity {
 }
 
 export class AbstractDto {
-  @ApiProperty()
   id: string;
 
-  @ApiProperty()
   @Type(() => Date)
   createdAt: Date;
 
-  @ApiProperty()
   @Type(() => Date)
   updatedAt: Date;
 

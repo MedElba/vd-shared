@@ -1,6 +1,6 @@
-import { TitleType } from '../common/constants/title-type';
-import { AbstractDto } from '../common/abstract.dto';
-import { PuntiMappaDto } from '../puntimappa/puntimappa-dto';
+import { TitleType } from "../common/constants/title-type";
+import { AbstractDto } from "../common/abstract.dto";
+import { PuntiMappaDto } from "../puntimappa/puntimappa-dto";
 export declare class InserzionistiDto extends AbstractDto {
     active: boolean;
     name: string;

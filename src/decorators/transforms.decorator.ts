@@ -1,10 +1,10 @@
-import { Transform } from 'class-transformer';
-import { castArray, isNil, trim } from 'lodash';
+import { Transform } from "class-transformer";
+import { castArray, isNil, trim } from "lodash";
 
 /**
  * @description trim spaces from start and end, replace multiple spaces with one.
  * @example
- * @ApiProperty()
+
  * @IsString()
  * @Trim()
  * name: string;
@@ -16,10 +16,10 @@ export function Trim(): PropertyDecorator {
     const value = params.value;
 
     if (Array.isArray(value)) {
-      return value.map((v) => trim(v).replace(/\s\s+/g, ' '));
+      return value.map((v) => trim(v).replace(/\s\s+/g, " "));
     }
 
-    return trim(value).replace(/\s\s+/g, ' ');
+    return trim(value).replace(/\s\s+/g, " ");
   });
 }
 
@@ -39,7 +39,7 @@ export function ToInt(): PropertyDecorator {
 
       return Number.parseInt(value, 10);
     },
-    { toClassOnly: true },
+    { toClassOnly: true }
   );
 }
 
@@ -62,6 +62,6 @@ export function ToArray(): PropertyDecorator {
 
       return castArray(value);
     },
-    { toClassOnly: true },
+    { toClassOnly: true }
   );
 }
